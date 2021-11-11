@@ -1,0 +1,128 @@
+/* Import the Google Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.offset {
+  padding: 0.5rem;
+}
+
+/*spacing for the navbar */
+.offset::before {
+  display: block;
+  content: "";
+  height: 3.7rem;
+  /*margin-top: -3.7rem;*/
+}
+
+
+
+/* Navigation */
+.navbar {
+  /*text-transform: uppercase;*/
+  font-weight: 700; /* bold */
+  /*font-size: .9rem; /* 1rem = 16px */
+  letter-spacing: .1rem;
+  /*background: rgba(0, 0, 0, .6)!important; /* transparent, override bg-dark class*/
+}
+/*.navbar-brand img {
+  height: 5rem;
+}*/
+.navbar-nav {
+  padding-right: .7rem;
+}
+
+/* Landing page */
+.landing {
+  /* The image used */
+  background-image: url("../img/landingPage.png");
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+/*@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}*/
+
+.heading {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  color: white;
+}
+.landing h1 {
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 700rem;
+  letter-spacing: .3rem;
+  /*text-shadow: .1rem .1rem .8rem black;*/
+  padding-bottom: 1rem;
+}
+
+.icon {
+  height: 6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+.img-thumbnail {
+  width: 300px;
+  border-radius: 150px;
+}
+
+.underline {
+  width: 3rem;
+  height: .2rem;
+  /*background-color: palegreen;*/
+  background-color: rgb(255, 184, 96);
+  margin: 0 auto 2rem;
+}
+
+.fixed-background  {
+  /* The image used */
+  background-image: url("../img/sb-blog-programming.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Text color */
+  color: white;
+}
+
+.card {
+  color: black;
+}
+
+a,
+a:hover {
+  color: #212529;
+}
+
+#contact {
+  /*background-color: palegreen;*/
+  padding: 1rem;
+}
+
+footer {
+  background-color: rgb(1, 107, 155);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}

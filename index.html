@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolie website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Angular, Vue, framework, software, applicatie, Wouter, Scherpereel, code">
+    <meta name="author" content="Wouter Scherpereel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-5.0.2-dist/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>woutercode.dev</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Navbar title-->
+        <span class="navbar-brand mb-0 h1">WOUTERCODE</span>
+        <!-- Toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar items-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- <ul class="navbar-nav d-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Taal
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLanguage">
+                <li><a class="dropdown-item" href="#">Nederlands</a></li>
+                <li><a class="dropdown-item" href="#">Engels</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home section -->
+    <div id="home">
+      <div class="landing">
+        <div class="heading text-center">
+          <img src="./img/source-code-icon-white.png" alt="Sourcecode icon" class="icon">
+          <!--<h1>Wouter Scherpereel</h1>-->
+          <h3>Hallo, mijn naam is Wouter Scherpereel<br>en ik ben een beginnend software ontwikkelaar.</h3>
+          <a class="btn btn-outline-light btn-lg" href="#about">Meer info</a>
+        </div>
+      </div>    
+    </div>
+    
+    <!-- About section -->
+    <div id="about" class="offset">
+      <div class="col-12 text-center">
+        <h3>About me</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <img src="./img/profilePicture.JPG" class="img-thumbnail" alt="profielfoto">
+            <p>
+              Ik woon in Waregem (BE) en ben net afgestudeerd van de graduaatsopleiding Informatica - programmeren aan de Hogeschool Gent.
+            </p>
+          </div>
+          <div class="col-sm-8">
+            <h5>Bio</h5>
+            <p>
+              Computers en software hebben me altijd al geboeid en nadat ik een cursus VB.net gevolgd had, was ik 
+              nog meer geïnterresseerd wat er allemaal mogelijk was in de IT wereld.<br>
+              Mijn belangrijkste eigenschappen zijn:
+              <ul>
+                <li>Leergierig</li>
+                <li>Nauwkeurig</li>
+                <li>In team en zelfstandig werken</li>
+                <li>Probleem oplossend denken</li>
+                <li>Flexibel</li>
+                <li>En ik hou van een uitdaging</li>
+              </ul>
+              Ik heb de opleiding informatica - programmeren gevolgd omdat ik wil weten hoe een applicatie werkt 
+              en al de verschillende componenten communiceren met elkaar.<br>
+              Mijn hobbies en activiteiten zijn: lezen, motorrijden (ik zit in het bestuur van de "Waregemse Motorvrienden") en 
+              projectjes uitwerken met een Raspberry Pi.
+            </p>
+          </div>
+        </div>
+        <h5>Skills</h5>
+        <p>
+          Omdat ik nog maar net afgestudeerd ben en nog geen relevante werkervaring heb, som ik hier onder alvast de 
+          skills op die ik geleerd heb tijdens mijn opleiding en in mijn vrije tijd.
+          <ul>
+            <li>Webdesign: HTML, CSS, JQuery, Bootstrap</li>
+            <li>Frameworks: Angular en Vue</li>
+            <li>Programeertalen: Javascript, C# en Python</li>
+            <li>Backend: Node.js</li>
+            <li>Databases: SQL en Oracle</li>
+          </ul>
+        </p>
+        <p>Ik ben meer op zoek naar een freelance opdracht (om ervaring op te doen) dan naar een vaste positie.</p>
+        <!-- <h5>CV</h5>
+        <p>
+          Een kopie van mijn CV beschikbaar stellen als download.
+        </p> -->
+      </div>
+    </div>
+
+    <!-- Projects section -->
+    <div id="projects" class="offset fixed-background">
+      <div class="col-12 text-center">
+        <h3>Projecten</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="col-12">
+        <h5>Professionele projecten</h5>
+        <p>
+          Ik heb nog geen professionele projecten die ik kan voorstellen, enkel een website die ik gemaakt heb voor de 
+          motorclub waar ik in zit.<br>
+        </p>
+        <!-- Start row -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/websiteWMV.png" class="card-img-top" alt="Website WMV">
+              <div class="card-body">
+                <h5 class="card-title">Website WMV</h5>
+                <p class="card-text">Mijn eerste website die ik gemaakt heb met Bootstrap</p>
+                <a href="http://wmv.epizy.com" target="_blank" class="btn btn-primary">Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of Cards -->
+        </div>
+        <!-- End of row -->
+        <br>
+        <p>
+          Verder wil ik me meer verdiepen in het gebruik van Javascript zoals Angular, React of Vue.<br>
+          Ook ben ik heel erg geïnterresseerd in de ontwikkeling van mobiele applicaties voor Android en Ios.
+        </p>
+
+        <h5>Persoonlijke projecten</h5>
+        <p>
+          Hier zijn enkele projecten die ik gemaakt heb in mijn vrije tijd en tijdens mijn opleiding:
+        </p>
+        <!-- Start row -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/photobooth.jpg" class="card-img-top" alt="Photobooth">
+              <div class="card-body">
+                <h5 class="card-title">Photobooth</h5>
+                <p class="card-text">Een photobooth die ik zelf gemaakt heb met een Raspberry Pi 4.<br>
+                  Het programma hier voor is geschreven in  Python.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/Woyvch/Photobooth" target="_blank" class="btn btn-primary">Photobooth</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appTourOfHeroes.png" class="card-img-top" alt="Tour of heroes">
+              <div class="card-body">
+                <h5 class="card-title">Tour of Heroes</h5>
+                <p class="card-text">Een tutorial van Angular.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://woyvch.github.io/tour-of-heroes/" target="_blank" class="btn btn-primary">Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appRaadHetGetal.png" class="card-img-top" alt="Raad het getal">
+              <div class="card-body">
+                <h5 class="card-title">Raad het getal</h5>
+                <p class="card-text">Een klein projectje gemaakt met Angular om wat ervaring op te doen met dit framework.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://woyvch.github.io/raad-het-getal/" target="_blank" class="btn btn-primary">Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appNotities.png" class="card-img-top" alt="Notities app">
+              <div class="card-body">
+                <h5 class="card-title">Notities applicatie</h5>
+                <p class="card-text">Een webapplicatie om notities te maken en bij te houden met verschillende gebruikers.<br>
+                  Deze applicatie is gemaakt in Angular.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://woyvch.github.io/notities/" target="_blank" class="btn btn-primary">Notities</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appVuetifyDashboard.png" class="card-img-top" alt="Vue tutorial">
+              <div class="card-body">
+                <h5 class="card-title">Vuetify Dashboard</h5>
+                <p class="card-text">Een Vue applicatie die gebruik maakt van het material design framework "Vuetify".</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://woyvch.github.io/vuetify-dashboard/" target="_blank" class="btn btn-primary">Website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appBarkeeper.png" class="card-img-top" alt="Barkeeper applicatie">
+              <div class="card-body">
+                <h5 class="card-title">Barkeeper applicatie</h5>
+                <p class="card-text">Dit is een webapplicatie die gemaakt is met Vue. Deze applicatie laat klanten van bv. een cafe toe om 
+                  bestellingen uit te voeren met hun smartphone.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://barkeeper.vercel.app/" target="_blank" class="btn btn-primary">Barkeeper</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of cards -->
+        </div>
+        <!-- End row -->
+      </div>
+      <br>
+      <p>In de toekomst zal ik nog meer projecten toevoegen.</p>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+      <div class="col-12 text-center">
+        <h3>Contact info</h3>
+        <div class="underline"></div>
+        <p><a href="mailto:scherpereel.w@gmail.com"></i>scherpereel.w@gmail.com</a></p>
+        <span style="font-size: 2rem;">
+          <!--<a href="mailto:scherpereel.w@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>-->
+          <a href="https://be.linkedin.com/in/wouter-scherpereel" target="_blank" title="Go to my Linkedin page"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Woyvch" target="_blank" title="Go to my Github page"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.instagram.com/wouterscherpereel" target="_blank" title="Go to my Instagram page"><i class="fab fa-instagram-square"></i></a>
+        </span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <footer class="text-center">
+        <p>&copy; 2021 Wouter Scherpereel</p>
+      </footer>
+    </div>
+    
+    <!-- JavaScript source files -->
+    <script src="./js/bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+  </body>
+</html>
