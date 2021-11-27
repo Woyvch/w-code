@@ -14,27 +14,19 @@ body {
   display: block;
   content: "";
   height: 3.7rem;
-  /*margin-top: -3.7rem;*/
 }
 
-
-
-/* Navigation */
+/*** Navigation ***/
 .navbar {
-  /*text-transform: uppercase;*/
   font-weight: 700; /* bold */
-  /*font-size: .9rem; /* 1rem = 16px */
   letter-spacing: .1rem;
-  /*background: rgba(0, 0, 0, .6)!important; /* transparent, override bg-dark class*/
 }
-/*.navbar-brand img {
-  height: 5rem;
-}*/
+
 .navbar-nav {
   padding-right: .7rem;
 }
 
-/* Landing page */
+/*** Landing page ***/
 .landing {
   /* The image used */
   background-image: url("../img/landingPage.png");
@@ -48,11 +40,11 @@ body {
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-/*@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
-}*/
+}
 
 .heading {
   position: absolute;
@@ -60,12 +52,12 @@ body {
   width: 100%;
   color: white;
 }
+
 .landing h1 {
   color: white;
   font-size: 3.8rem;
   font-weight: 700rem;
   letter-spacing: .3rem;
-  /*text-shadow: .1rem .1rem .8rem black;*/
   padding-bottom: 1rem;
 }
 
@@ -79,6 +71,26 @@ body {
   font-size: 1.1rem;
 }
 
+/* Button animation */
+.fill {
+  animation-name: fill;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes fill {
+  from {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+  }
+}
+
+/*** About section ***/
 .img-thumbnail {
   width: 300px;
   border-radius: 150px;
@@ -87,11 +99,11 @@ body {
 .underline {
   width: 3rem;
   height: .2rem;
-  /*background-color: palegreen;*/
   background-color: rgb(255, 184, 96);
   margin: 0 auto 2rem;
 }
 
+/*** Projects section ***/
 .fixed-background  {
   /* The image used */
   background-image: url("../img/sb-blog-programming.jpg");
@@ -115,11 +127,12 @@ a:hover {
   color: #212529;
 }
 
+/*** Contact section ***/
 #contact {
-  /*background-color: palegreen;*/
   padding: 1rem;
 }
 
+/*** Footer section ***/
 footer {
   background-color: rgb(1, 107, 155);
   color: white;
