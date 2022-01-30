@@ -154,19 +154,64 @@
         <!-- Start row -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Card -->
-          <div class="col">
+          <!--<div class="col">
             <div class="card h-100">
               <img src="./img/websiteWMV.png" class="card-img-top" alt="Website WMV">
               <div class="card-body">
-                <h5 class="card-title">Website WMV</h5>
+                <!--<h5 class="card-title">Website WMV</h5>
                 <p class="card-text">Mijn eerste website die ik gemaakt heb met Bootstrap</p>
-                <a href="http://wmv.epizy.com" target="_blank" class="btn btn-primary">Website</a>
+                <a href="http://wmv.epizy.com" target="_blank" class="btn btn-primary">Website</a>-->
+
+                <!-- Trigger/Open The Modal -->
+                <!--<button id="modalBtn" class="btn btn-primary" onclick="openModal('modal1');">Meer info</button>
+                <!-- The Modal -->
+                <!--<div id="modal1" class="modal">
+                  <!-- Modal content -->
+                  <!--<div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Website WMV</h2>
+                      <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Mijn eerste website die ik gemaakt heb.<br>
+                        Deze is gemaakt met bootstrap-5, jquery-3, JavaScript en de iconen zijn van fontawesome.
+                      </p>
+                      <a href="http://wmv.epizy.com" target="_blank" class="btn btn-primary">Website</a>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>-->
+
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/websiteWMV.png" class="card-img-top" alt="Website WMV" onclick="openModal('modal2');">
+                <!-- The Modal -->
+                <div id="modal2" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Website WMV</h2>
+                      <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Mijn eerste website die ik gemaakt heb.<br>
+                        Deze is gemaakt met bootstrap-5, jquery-3, JavaScript, de iconen zijn van fontawesome.
+                      </p>
+                      <a href="http://wmv.epizy.com" target="_blank" class="btn btn-primary">Website</a>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
           <!-- End of Cards -->
         </div>
         <!-- End of row -->
+
         <br>
         <p>
           Verder wil ik me meer verdiepen in het gebruik van Javascript zoals Angular, React of Vue.<br>
@@ -182,82 +227,135 @@
           <!-- Card -->
           <div class="col">
             <div class="card h-100">
-              <img src="./img/photobooth.jpg" class="card-img-top" alt="Photobooth">
-              <div class="card-body">
-                <h5 class="card-title">Photobooth</h5>
-                <p class="card-text">Een photobooth die ik zelf gemaakt heb met een Raspberry Pi 4.<br>
-                  Het programma hier voor is geschreven in  Python.
-                </p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/Woyvch/Photobooth" target="_blank" class="btn btn-primary">Photobooth</a>
-              </div>
-            </div>
-          </div>
-          <!-- Card -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="./img/appTourOfHeroes.png" class="card-img-top" alt="Tour of heroes">
-              <div class="card-body">
-                <h5 class="card-title">Tour of Heroes</h5>
-                <p class="card-text">Een tutorial van Angular.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://woyvch.github.io/tour-of-heroes/" target="_blank" class="btn btn-primary">Website</a>
+              <img src="./img/photobooth.jpg" class="card-img-top" alt="Photobooth" onclick="openModal('modal1.1');">
+              <!-- The Modal -->
+              <div id="modal1.1" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Photobooth</h2>
+                    <span class="close" onclick="closeModal('modal1.1')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Een photobooth die ik zelf gemaakt heb met een Raspberry Pi 4.<br>
+                      Het programma is geschreven in Python.
+                    </p>
+                    <a href="https://github.com/Woyvch/Photobooth" target="_blank" class="btn btn-primary">Photobooth</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Card -->
           <div class="col">
             <div class="card h-100">
-              <img src="./img/appRaadHetGetal.png" class="card-img-top" alt="Raad het getal">
-              <div class="card-body">
-                <h5 class="card-title">Raad het getal</h5>
-                <p class="card-text">Een klein projectje gemaakt met Angular om wat ervaring op te doen met dit framework.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://woyvch.github.io/raad-het-getal/" target="_blank" class="btn btn-primary">Website</a>
-              </div>
-            </div>
-          </div>
-          <!-- Card -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="./img/appNotities.png" class="card-img-top" alt="Notities app">
-              <div class="card-body">
-                <h5 class="card-title">Notities applicatie</h5>
-                <p class="card-text">Een webapplicatie om notities te maken en bij te houden met verschillende gebruikers.<br>
-                  Deze applicatie is gemaakt in Angular.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://woyvch.github.io/notities/" target="_blank" class="btn btn-primary">Notities</a>
+              <img src="./img/appTourOfHeroes.png" class="card-img-top" alt="Tour of heroes" onclick="openModal('modal2.2');">
+              <!-- The Modal -->
+              <div id="modal2.2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Tour of Heroes</h2>
+                    <span class="close" onclick="closeModal('modal2.2')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Een tutorial van Angular.
+                    </p>
+                    <a href="https://woyvch.github.io/tour-of-heroes/" target="_blank" class="btn btn-primary">Website</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Card -->
           <div class="col">
             <div class="card h-100">
-              <img src="./img/appVuetifyDashboard.png" class="card-img-top" alt="Vue tutorial">
-              <div class="card-body">
-                <h5 class="card-title">Vuetify Dashboard</h5>
-                <p class="card-text">Een Vue applicatie die gebruik maakt van het material design framework "Vuetify".</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://woyvch.github.io/vuetify-dashboard/" target="_blank" class="btn btn-primary">Website</a>
+              <img src="./img/appRaadHetGetal.png" class="card-img-top" alt="Raad het getal" onclick="openModal('modal2.3');">
+              <!-- The Modal -->
+              <div id="modal2.3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Raad het getal</h2>
+                    <span class="close" onclick="closeModal('modal2.3')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Een klein projectje gemaakt met Angular om wat ervaring op te doen met dit framework.
+                    </p>
+                    <a href="https://woyvch.github.io/raad-het-getal/" target="_blank" class="btn btn-primary">Website</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Card -->
           <div class="col">
             <div class="card h-100">
-              <img src="./img/appBarkeeper.png" class="card-img-top" alt="Barkeeper applicatie">
-              <div class="card-body">
-                <h5 class="card-title">Barkeeper applicatie</h5>
-                <p class="card-text">Dit is een webapplicatie die gemaakt is met Vue. Deze applicatie laat klanten van bv. een cafe toe om 
-                  bestellingen uit te voeren met hun smartphone.</p>
+              <img src="./img/appNotities.png" class="card-img-top" alt="Notities app" onclick="openModal('modal2.4');">
+              <!-- The Modal -->
+              <div id="modal2.4" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Notities applicatie</h2>
+                    <span class="close" onclick="closeModal('modal2.4')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Een webapplicatie om notities te maken en bij te houden met verschillende gebruikers.<br>
+                      Deze applicatie is gemaakt in Angular.</p>
+                    </p>
+                    <a href="https://woyvch.github.io/notities/" target="_blank" class="btn btn-primary">Notities</a>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <a href="https://barkeeper.vercel.app/" target="_blank" class="btn btn-primary">Barkeeper</a>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appVuetifyDashboard.png" class="card-img-top" alt="Vue tutorial" onclick="openModal('modal2.5');">
+              <!-- The Modal -->
+              <div id="modal2.5" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Vuetify Dashboard</h2>
+                    <span class="close" onclick="closeModal('modal2.5')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Een Vue applicatie die gebruik maakt van het material design framework "Vuetify".
+                    </p>
+                    <a href="https://woyvch.github.io/vuetify-dashboard/" target="_blank" class="btn btn-primary">Website</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="./img/appBarkeeper.png" class="card-img-top" alt="Barkeeper applicatie" onclick="openModal('modal2.6');">
+              <!-- The Modal -->
+              <div id="modal2.6" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Barkeeper applicatie</h2>
+                    <span class="close" onclick="closeModal('modal2.6')">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Dit is een webapplicatie die gemaakt is met Vue. Deze applicatie laat klanten van bv. een cafe toe om 
+                      bestellingen uit te voeren met hun smartphone.</p>
+                    </p>
+                    <a href="https://barkeeper.vercel.app/" target="_blank" class="btn btn-primary">Barkeeper</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
